@@ -1,0 +1,26 @@
+Open Visual Studio Code and navigate to the "mysite" directory.
+Customize the site by modifying the files in the "_layouts", "_includes", and "_posts" directories.
+For your "Hello World" page, create a new file in the root directory called "index.html" and add your HTML code there.
+
+Install Jekyll plugins (if needed):
+
+Jekyll has a variety of plugins available to extend its functionality.
+Open the "Gemfile" in your Jekyll site's root directory and add the plugins you want to use.
+For example, if you want to add a plugin called "jekyll-sitemap", add the following line to the "Gemfile": `gem 'jekyll-sitemap'`.
+Save the file and run `bundle install` in the terminal to install the new plugins.
+
+Build and preview your site:
+
+In the terminal, navigate to your Jekyll site's root directory.
+Run the command `bundle exec jekyll serve` to build and serve your site locally.
+Open your browser and visit http://localhost:4000 to preview your site.
+
+Publish your site:
+
+Once you're satisfied with your site, it's time to publish it.
+In your Jekyll site's root directory, run the command `bundle exec jekyll build`.
+This will generate your static site files in the "_site" directory.
+Upload the contents of the "_site" directory to your web server or hosting provider.
+Make sure to configure your web server to serve the files as a website.
+
+As you mentioned, it may take some time (up to 24 hours) for the DNS changes to propagate, so you may need to wait before your domain is accessible.

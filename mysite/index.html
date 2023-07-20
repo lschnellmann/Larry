@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 24px;
+      padding-top: 200px;
+    }
+  </style>
+</head>
+<body>
+  <button id="helloButton" onmousedown="sayHello()" onmouseup="resetText()">Press here to say hello to the world</button>
+
+  <script>
+    function sayHello() {
+      document.body.innerHTML = "Hello world";
+    }
+
+    function resetText() {
+      document.body.innerHTML = '<button id="helloButton" onmousedown="sayHello()" onmouseup="resetText()">Press here to say hello to the world</button>';
+    }
+  </script>
+</body>
+
+</html>
+
